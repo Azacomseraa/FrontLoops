@@ -1,0 +1,147 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #78ACCD;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+hr {
+	margin: 0;
+	padding: 0;
+	border: none;
+	height: 1px;
+	background: #DEDEDE;
+}
+/*Header*/
+.calendar{
+	width: 400px;
+	height: 420px;
+	background: #fff;
+	margin: 120px auto;
+}
+.year {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #848EA4;
+}
+.day-item{
+	padding-left: 20px;
+	float: left;
+}
+.monthly{
+	padding-right: 20px;
+	float: right;
+}
+/*End off Header*/
+main{
+	overflow: hidden;
+}
+.calendar-list{
+	padding: 25px 30px 14px;
+}
+.weekdays {
+	padding: 10px 0;
+}
+.weekdays li{
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	width: 13%;
+	font-size: 13px;
+	font-weight: 600;
+}
+.day{
+	margin-top: 20px;
+	position: relative;
+	z-index: 9999;
+}
+.day li {
+    display: inline-block;
+ 	width: 13%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.day .item{
+	color: #DFDEDE;
+}
+.day .active.chocolate{
+	color: #fff;
+}
+.day .active:before{
+	content: '';
+	margin-top: -9px;
+	margin-left: 6px;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	border-radius: 100%;
+	
+}
+.day sup{
+	position: absolute;
+	margin-top: -11px;
+	width: 15px;
+	height: 15px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 15px;
+	border-radius: 50%;
+}
+.day .active.chocolate-item sup{
+	background: #DE6E46;
+}
+.day .active.blueviolet sup{
+	background: #AE5989;
+}
+.day .active.chocolate:before{
+	background: #DE6E46;
+	border: 2px solid #DE6E46
+	color: #fff;
+	z-index: -1;
+}
+.day .active.blueviolet:before{
+	border: 2px solid #AE5989;
+}
+.day .active.chocolate-item:before{
+	border: 2px solid #DE6E46;
+}
+footer{
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+}
+.time-degree{
+	font-size: 13px;
+	display: inline-block;
+	font-weight: bold;
+}
+.time, .plus, .degree{
+	float: left;
+	width: 50px;
+	text-align: center;
+}
+.plus {
+	margin-left: 100px;
+	margin-right: 100px;
+	position: relative;
+}
+.plus:after{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #DE6F47;
+	border-radius: 50%;
+	bottom: 19px;
+	left: 8px;
+
+}

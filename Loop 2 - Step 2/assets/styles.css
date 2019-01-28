@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #2F2F2F;
+}
+h3, label {
+	margin: 0;
+}
+hr {
+	height: 1px;
+	background: #DEDEDE;
+	border: none;
+	margin-top: 10px;
+
+}
+.container {
+	width: 500px;
+	background: #FDEC51;
+	margin: 0px auto;
+	padding: 60px 0 70px 60px;
+	
+}
+.account-item {
+	margin-bottom: 60px;
+}
+.account-item>h3{
+	float: left;
+}
+.close{
+  width: 15px;
+  height: 15px;
+  background-color: #7E762A;
+  -webkit-mask: url(img/close.svg) no-repeat center;
+  mask: url(img/close.svg) no-repeat center;
+  margin-left: 350px;	  
+}
+.close:hover{
+	background-color: #000;
+}
+form {
+  width: 500px;
+  background: #fff;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+}
+form>img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+}
+label {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	color: #AEACAA;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+input {
+	width: 125px;
+	border: none;
+}
+input:focus, textarea:focus {
+	outline: none;
+}
+.first-left {
+	float: left;
+}
+.last-right {
+	margin-left: 70px;
+	display: inline-block;
+}
+textarea{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: auto;
+}
+.tab-button{
+	float: right;
+	padding: 25px 60px 0 0;
+}
+.tab-button>a{
+	text-decoration: none;
+	color: #6F6A3F;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 45px;
+}
+.tab-button>a:hover{
+	color: #000;
+}

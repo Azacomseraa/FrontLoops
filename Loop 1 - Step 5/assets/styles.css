@@ -1,0 +1,69 @@
+body {
+	background: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-weight: 500;
+}
+.contioner {
+	width: 400px;
+	margin: 100px auto;
+	background: #fff;
+	padding: 65px 40px 40px;
+}
+.cities {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+}
+.cities:after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 5px;
+	background: #DEEDF7;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.city-name-shot {
+	font-family: 'Prompt', sans-serif;
+	text-transform: uppercase;
+	color: #3B8ACF;
+	font-size: 40px;
+}
+.city-name-full {
+	text-transform: uppercase;
+	color: #AAABAA;
+}
+.city-from {
+	float: left;
+}
+.city-to {
+	float: right;
+}
+.ticket-ditalis {
+	overflow: hidden;
+}
+.ticket-info-label {
+	text-transform: uppercase;
+	color: #AAABAA;
+	font-weight: bold;
+}
+.ticket-info{
+	width: 33.33%;
+	float: left;
+	margin-bottom: 22px;
+}
+.ticket-qr {
+	width: 170px;
+	float: right;	
+	margin-right: 32px;
+}
+.ticket-qr img {
+	max-width: 100%;	
+}
+.ticket-info-value {
+	font-weight: bold;
+	color: #000;
+}

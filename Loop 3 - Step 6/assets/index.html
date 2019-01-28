@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 3 - Step 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="container">
+	<div class="left">
+		<div class="left-top">Cart - Customer Information - Shiping Method - <span>Payment Method</span></div>
+			<form class="payment">
+				<h1>Payment information</h1>
+					<label for="card_number">Card Number
+						<input type="text" placeholder="**** **** **** ****">
+					</label>
+					<div class="left-card">
+					<label for="card_holder">Card Holder <br>
+						<input type="text" placeholder="Akbarov Azamat">
+					</label>
+					<label class="exp_date" for="exp_date">Exp.Date <br>
+						<input type="text" placeholder="03/19">
+					</label>
+					<label for="cvc">Cvc <br>
+						<input type="password" placeholder="***">
+					</label>
+					</div>
+			</form><!-- /.form -->
+
+			<form class="billing">
+				<h1>Billing addres</h1>
+						
+					<label class="billing-box">Same as The shipping address
+					  <input type="radio" checked="checked" name="radio">
+					  <span class="checkmark"></span>
+					</label><hr>
+					<label class="billing-box">Use a different billing address
+					  <input type="radio" name="radio">
+					  <span class="checkmark"></span>
+					</label>
+
+			</form><!-- /.form -->
+	</div><!-- /.left -->	
+
+	<div class="right">
+		<form>
+			<div class="right-top">
+				<div class="images">
+					<img src="img/order.jpg" alt="Chocolate images" width="32" height="27">
+				</div>
+					<p>Chocolate bar</p>
+						<p style="font-weight: bold">$2.49</p>
+			</div><!-- /.right-top -->		
+				<hr>
+			<div class="right_box">
+				<div class="right-item mor">
+					<div class="choco-name">Subtotal</div>
+					<div class="choco-spice">$4.98</div>		
+				</div>
+				<div class="right-item">
+					<div class="choco-name">Shipping</div>
+					<div class="choco-spice">$3.00</div>		
+				</div>
+				<hr>
+				<div class="right-item">
+					<div class="choco-name">Total</div>
+					<div class="choco-spice bl">$7.98</div>		
+				</div>
+			</div>
+		</form>
+	</div><!-- /.right -->			
+<div class="clear"></div>
+<footer>
+	<div class="left-bot">
+					<p class="left-text">Return to shipping method</p>
+					<button>Complate order</button>
+				</div>	
+</footer>
+</div><!-- /.container -->
+
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>

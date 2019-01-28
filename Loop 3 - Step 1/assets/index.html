@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 3 - Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<div class="product">
+			<div class="prodcut-logo">
+				<img src="img/logo.png" alt="" width="40">
+			</div>
+			<div class="product-num">39</div>
+			<div class="procut-sneakers">
+				<img src="img/preview.png" alt="">
+				<div class="circle first">
+					<div class="plus"></div>
+					<div class="minus"></div>
+				</div>
+				<div class="circle second">
+					<div class="plus"></div>
+					<div class="minus"></div>
+				</div>
+				<div class="circle three">
+					<div class="plus"></div>
+					<div class="minus"></div>
+				</div>
+			</div>
+			<div class="product-item">
+				<div class="p-item"></div>
+				<div class="p-item one"></div>
+				<div class="p-item"></div>
+			</div>
+		</div>	
+
+		<div class="nike">
+			<div class="nike-box">
+			<div class="nike-title">Nike Flyknit</div>
+			<div class="nike-price">$189.00 <span>$259.00</span></div>
+			<p>With a flexible Flyknit upper placed directly on top of a radically reinvented Air cushioning system, The Nike Air VaporMax defies conventional style and provides an unbelievably light, bouncy and flexible feel.</p>
+				<div class="nike-size">
+				<div class="nike-sizle">Size</div>
+				<span class="nike-item border">S</span>
+				<span class="nike-item border">M</span>
+				<span class="nike-item border">L</span>
+				<span class="nike-item border">XL</span>
+				<span class="nike-item border">XXL</span>
+				
+				</div>
+			<div class="nike-pieces">
+				Amount <span>2</span>
+			</div>
+
+			<button class="nike-btn">BUY NOW</button>
+			</div><!-- /.nike-box -->		
+		</div>
+	</div>	
+</div>
+
+
+<script>
+	var span = document.querySelectorAll('.nike-item');
+	for(var i=0; i<span.length; i++){
+		span[i].onclick = function(){
+			var active = document.getElementsByClassName('active');
+			for(var i=0; i<active.length; i++){
+				active[i].classList.remove('active');
+			}
+			event.target.classList.add('active');
+			console.log(event);
+		}
+	}
+</script>
+
+
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>

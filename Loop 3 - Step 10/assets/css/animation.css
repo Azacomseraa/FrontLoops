@@ -1,0 +1,139 @@
+.effect{
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	z-index: 2;
+	background-image: url(../img/add.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	cursor: pointer;
+}
+.effect:hover{
+	background-color: #ddd5d5;
+}
+.effect:before{
+	content: '';
+	top: -1px;
+	left: -1px;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	transform: scale(0);
+	animation-name: circle;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.effect:after{
+	content: '';
+	top: -1px;
+	left: -1px;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	transform: scale(0);
+	animation-name: circle;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes circle{
+	from{
+		transform: scale(1);
+		opacity: 1;
+	}
+	to{
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+
+.myicon{
+	width: 1px;
+	height: 14px;
+	background-color: #dedddd;
+	text-align: center;
+	margin: 0 5px;
+	position: relative;
+}
+.myicon:before{
+	content: '';
+	position: absolute;
+	left: -200%;
+	width: 5px;
+	height: 1px;
+	background-color: #dedddd;
+}
+.myicon:after{
+	content: '';
+	position: absolute;
+	left: -200%;
+	bottom: 0;
+	width: 5px;
+	height: 1px;
+	background-color: #dedddd;
+}
+.pices{
+	width: auto;
+	font-size: 37px;
+	font-weight: 800;
+	position: relative;
+}
+.pices:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	background-color: #FFE7B8;
+	left: -1px;
+	bottom: 0;
+	z-index: -1;
+}
+.addbtn{
+	width: 100%;
+	max-width: 153px;
+	font-size: .7em;
+	border: none;
+	background-color: #FFC23F;
+	text-align: left;
+	padding: 15px 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 35px;
+	position: relative;
+}
+.addbtn:hover{
+	background-color: #FCAA2A;
+	cursor: pointer;
+}
+.addbtn:after{
+	content: '';
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-image: url(../img/add.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	background-color: #fff;
+	right: 6px;
+	top: 6px;
+}
+.one__gallery{
+	width: 100%;
+	max-width: 
+}

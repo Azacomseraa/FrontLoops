@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: #F7CD75;
+}
+hr {
+	border: none;
+	height: 1px;
+	background: #DEDEDE;
+	margin: 44px 0 44px 0;
+}
+h2 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+.container {
+	width: 800px;
+	margin: 100px auto;
+	box-shadow: 1px 1px 1px 1px rgb(255,255,255,0.1);	
+}
+.my-wallets {
+	width: 300px;
+	height: 450px;
+	background: #F2F2F2;
+	float: left;
+	padding: 40px 45px;
+	position: relative;
+	overflow: auto;
+}
+.wallets-plus{
+	margin-left: 60px;
+}
+.card-about{
+	margin-top: 40px;
+}
+.card-list {
+	width: 210px;
+	height: 110px;
+	background-repeat: no-repeat;
+	background-size: 45px;
+	background-position: 15px 15px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 50px 10px;
+	font-size: 0.9em;
+	color: #727272;
+	border: 1px solid #DEDEDE;
+	transition: all 0.3s ease;
+}
+.card-list.maestro {
+	margin-bottom: 0;
+}
+.card-number {
+	margin-bottom: 10px;
+}
+.card-list:hover, .card-list.active {
+	box-shadow: 0 0 0 2px #8793C6;
+}
+.card-list.visa {
+	background-image: url(img/visa.svg);
+}
+.card-list.mastercard {
+	background-image: url(img/mastercard.svg);
+}
+.card-list.maestro {
+	background-image: url(img/maestro.svg);
+}
+.current-balance {
+	width: 500px;
+	height: 450px;
+	overflow: auto;
+	background: #fff;
+	float: left;
+	padding: 40px 45px;
+}
+h2>.balance-all {
+	position: relative;
+}
+.balance-all {
+	bottom: 4px;
+	position: absolute;
+	float: right;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.product-name-item{
+	margin-bottom: 45px;
+	position: relative;
+	margin-left: 50px;
+}
+.product-name-item:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #E2E2E2;
+	border-radius: 100%;
+	top: 8px;
+	left: -50px;
+	background: url(img/minus.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.product-name-item.active:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #E2E2E2;
+	border-radius: 100%;
+	top: 8px;
+	left: -50px;
+	background: url(img/plus.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.product-name {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.product-directions {
+	font-size: 0.8em;
+	color: #B5B5B5;
+}
+.product-prince{
+	position: absolute;
+	right: 0;
+	bottom: 8px;
+	color: #8797C6;
+	font-weight: bold;
+}
+.product-prince.active{
+	color: #8ACE5E;
+}
+.product-name-item:last-child{
+	margin-bottom: 0;
+}
+@media only screen and (max-width: 800px){
+	.container {
+		width: 95%;
+		margin: 35px auto; 
+	}
+	.my-wallets{
+		width: 35%;
+		padding: 30px 25px;
+	}
+	.current-balance{
+		width: 65%;
+		padding: 30px 25px;
+	}
+}

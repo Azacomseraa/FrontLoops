@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background: url(img/background.jpg) no-repeat center fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+h2 {
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.card {
+	width: 380px;
+	margin: 120px auto;
+	background: white;
+	overflow: hidden;
+	border-radius: 8px;
+	
+}
+.steps {
+	padding: 20px 0;
+	text-align: center;
+
+}
+.steps > .steps-item {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 2px;
+	background: #DEDEDE;
+	border-radius: 50%;
+}
+.steps-item.active{
+	background: #AAAAAA;
+}
+.card-option {
+	
+}
+.card-item {
+	display: block;
+	padding: 18px 0;
+	text-transform: uppercase;
+	color: #AAAAAA;
+	font-weight: bold;
+	font-size: 0.9em;
+	border-top: 1px solid #DEDEDE;
+}
+.card-item:hover{
+	background-color: #F0F0F0;
+}
+.card-item.active:hover{
+	background-color: #F0F0F0;
+}
+.card-item.active{
+	color: #000000;
+}
+.card-item img{
+	margin: 0 25px;
+}
+.card-item.active {
+	content: "";
+	background: url("img/check.svg");
+	background-repeat: no-repeat;
+	background-position-y: center; 
+	background-position-x: 300px;
+}
+.button-next {
+	background-color: #598BDD;
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.8px;
+	transition: all 0.3s ease;
+}
+.button-next:hover {
+	background: #4C88E1;
+} 
+.button-next:active {
+	transform: translateY(2px);
+}

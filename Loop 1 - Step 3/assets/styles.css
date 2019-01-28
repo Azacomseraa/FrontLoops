@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #16A085;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.account {
+	width: 500px;
+	height: 400px;
+	background-color: #ffff;
+	margin: 100px 420px;
+	padding: 50px 70px;	
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}	
+h2 {
+	margin: 0 0 30px 0;
+	float: left;
+	font-weight: bold;
+
+}
+.account-img {
+	width: 25px;
+	border: 1px solid #EAEAEA;
+	padding: 8px;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+	position: absolute;
+	top: 45px;
+	left: 500px;
+}
+.account-img:hover {
+	box-shadow: 0px 0px 0px 3px #EAEAEA;
+}
+.account-member {
+	color: #ABB2BE;
+	font-style: 0.6em;
+	margin-bottom: 45px;
+	clear: both;
+}
+.price p {
+	height: 30px;
+	color: #5C5C5C;
+}
+span {
+	padding: 0 25px;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #000;
+}
+.active {
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+img {
+	right: 0px;
+	width: 650px;
+	position: absolute;
+	top: 190px;
+}

@@ -1,0 +1,85 @@
+body {
+	background-color: #55557E;
+}
+.container {
+	width: 381px;
+	height: 480px;
+	margin: 200px auto;
+}
+h2 {
+	margin: 0;
+}
+a {
+	display: inline-block;
+}
+hr {
+	border: none;
+	height: 1px;
+	background-color: #E2E2E2;
+}
+svg {
+	width: 25px;
+	height: 20px;
+	padding: 20px 24px;
+	background: #3D3E52;
+	fill: #B5B5C7;
+}
+svg:hover{
+	fill: #696871
+}
+a.active>svg{
+	background: #252525;
+	fill: #fff;
+	transform: scale(1.2);
+}
+.foot{
+	width: 300px;
+	height: 385px;
+	margin: 15px auto;
+}
+.foot-img {
+	height: 150px;
+	background: url(img/food.jpg) no-repeat center;	
+	background-size: cover;
+	opacity: 0.6
+}
+.foot-menu {
+	position: relative;
+}
+.foot-menu .addres {
+	color: #fff;
+	position: absolute;
+	left: 25px;
+	top: -65px;
+	font-weight: 900;
+}
+.addres>div{
+	font-size: 12px;
+	font-weight: 500;
+}
+.addres img{
+	width: 12px;
+}
+.foot-list {
+	height: 235px;
+	background: #fff;
+}
+.foot-name {
+	float: left;
+}
+.foot-nomber {
+	float: right;
+	transition: all 0.5s ease;
+}
+.foot-item{
+	padding: 12px 22px 12px 22px;
+	clear: both;
+	font-weight: bold;
+	overflow: hidden;
+	color: #B7ADAA;
+}
+.foot-item:hover .foot-nomber:not(:hover){
+	transform: scale(1.4);
+	color: #000;
+}
+

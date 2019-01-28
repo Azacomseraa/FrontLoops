@@ -1,0 +1,140 @@
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-image: linear-gradient(to bottom, #cfdde8, #748fa5)
+
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+.messege {
+	width: 400px;
+	margin: 100px auto;
+	position: relative;
+}
+.title {
+	background: #6A96D8;
+	color: #ffffff;
+	padding: 20px 45px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.title:before{
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	left: 25px;
+	top: 26px;
+}
+.close{
+	position: absolute;
+	font-size: 35px;
+	color: #D3DFF4;
+	text-decoration: none;
+	top: 6px;
+	right: 25px;
+}
+.section {
+	background: #FFFFFF;
+	padding: 15px;
+	margin: 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	position: relative;
+}
+.messege-day {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #F0EBE3;
+	font-weight: bold;
+	position: absolute;
+	padding: 10px;
+	top: 6px;
+	left: 165px;
+	background: #fff;
+}
+.section hr {
+	border: 1px solid #DDDDDD;
+}
+.messege-right, .messege-left {
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 12px 0 ;
+	position: relative;
+}
+.messege-right .text-item{
+	background-color: #E6EDF6;
+	width: 250px;
+	border-radius: 0 4px 4px 4px;
+}
+.messege-right .text-item.plus {
+	width: 80px;
+}
+.clock-item {
+	color: #BABDC1;
+	margin-bottom: 5px;
+}
+.messege-left {
+	padding-left: 100px; 
+}
+.messege-left.buttom{
+	padding-left: 180px; 
+}
+.text-item {
+	padding: 7px 5px;
+}
+.messege-left .text-item {
+	background-color: #F2F2F2;
+	border-radius: 0 4px 4px 4px;
+}
+.messege-left.buttom .text-item {
+	background-color: #FFC2C1;
+	border-radius: 0 4px 4px 4px;
+}
+.messege-left .clock-item {
+	text-align: right;
+}
+.messege-right .text-item:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #E6EDF6;
+	left: -7px;
+	top: 32px;
+}
+.messege-left .text-item.pointer:before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 10px solid #F2F2F2;
+	right: -7px;
+	top: 32px;
+}
+input {
+	width: 300px;
+	border: none;
+	padding: 5px 5px 5px 5px;
+}
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #6A97D9;
+	cursor: pointer;
+}
+

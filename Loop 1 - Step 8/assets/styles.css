@@ -1,0 +1,134 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F8EBE9; 
+	font-size: 16px;
+}
+.container {
+	width: 1000px;
+	margin: 30px auto;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: white;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: 500;
+}
+.back-button{
+	margin: 35px 40px auto;
+	display: block;
+	float: left;
+	position: relative;
+	color: #475F7F;
+}
+.back-button:before{
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-image: url(img/arrow-back.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: -17px;
+	top: -1px;
+}
+.travel {
+	width: 560px;
+	float: right;
+	background: #fff;
+	margin: 0;
+	padding: 35px 30px 60px 100px;
+}
+.seties>ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-bottom: 125px;
+
+}
+.seties>ul>li>a{
+	margin-left: 20px;
+	color: #999999;
+}
+.seties .active{
+	color: #000;
+	font-weight: bold;
+}
+.name-item {
+	font-size: 4em;
+	font-family: 'Playfair Display';
+    line-height: 1.2;
+    position: relative;
+    margin-bottom: 30px;
+}
+.name-item:after{
+	content: "";
+	width: 100px;
+	height: 5px;
+	background: #000;
+	position: absolute;
+	top: 120px;
+	right: 90px;
+}
+.avtor {
+	font-size: 1.6em;
+	font-family: 'Playfair Display';
+	margin-bottom: 40px;
+}
+.vedio-item {
+	width: 175px;
+	float: left;
+	margin-right: 40px;
+	display: inline-block;
+	position: relative;
+}
+.vedio-item img{
+	max-width: 100%;
+	margin-bottom: 16px;
+}
+.vedio-item:after{
+	content: "";
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	background: rgb(255,255,255,0.5) url(img/play.svg);
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 90px;
+	left: 60px;
+}
+.photos-item{
+	position: relative;
+	color: #000;
+}
+
+.photos-item:after {
+	content: "";
+	position: absolute;	
+	width: 18px;
+	height: 18px;
+	background: url(img/arrow-forward.svg) no-repeat;
+	background-size: contain;
+	left: 115px;
+	top: -2px;
+}
+.text-item{
+	line-height: 45px;
+	font-size: 1.2em;
+}

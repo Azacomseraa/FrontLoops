@@ -1,0 +1,247 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #fafafa;
+	font-size: 16px;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+	height: auto;
+}
+label{
+	color: #AAAAAA;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+.container{
+	width: 100%;
+	max-width: 1160px;
+	margin: 0 auto;
+}
+.left{
+	width: 100%;
+	max-width: 698px;
+	float: left;
+}
+.left form{
+	background-color: #fff;
+	box-shadow: 4px 4px 20px rgba(68, 68, 68, 0.1);
+}
+.right{
+	width: 100%;
+	max-width: 437px;
+	float: right;
+	margin-top: 66px;
+}
+.right form{
+	background-color: #fff;
+	box-shadow: 4px 4px 20px rgba(68, 68, 68, 0.1);
+	padding: 30px 28px;
+}
+.left-top{
+	font-size: .8em;
+	margin-top: 20px;
+	margin-bottom: 32px;
+}
+.payment{
+	margin-bottom: 30px;
+	padding: 27px 30px;
+}
+.payment h1{
+	margin-bottom: 35px;
+}
+label[for="card_number"] input[type="text"]{
+	width: 100%;
+}
+.payment input{
+	margin-top: 9px;
+	height: 38px;
+	width: 100%;
+	padding-left: 10px;
+	font-size: 1.2em;
+	font-weight: 600;
+	border: 2px solid #DEDEDE;
+	outline: none;
+}
+.payment input:focus{
+	border: 2px solid #717171;
+}
+label[for="card_holder"]{
+	width: 100%;
+	max-width: 370px;
+	margin-right: 20px;
+}
+label[for="exp_date"]{
+	width: 100%;
+	max-width: 110px;
+}
+label[for="cvc"]{
+	width: 100%;
+	max-width: 110px;
+	margin-left: 20px;
+}
+.left-card{
+	display: flex;
+	margin-top: 20px;
+}
+.billing h1{
+	margin-bottom: 55px;
+	padding: 27px 30px;
+}
+.billing-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-transform: unset;
+    font-weight: normal;
+    color: #000;
+    margin-left: 20px;
+
+}
+.billing-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.billing-box:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.billing-box input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.billing-box input:checked ~ .checkmark:after {
+    display: block;
+}
+.billing-box .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+}
+hr{
+	border: none;
+	height: 1px;
+	background-color: #DEDEDE;
+	margin: 20px 0;
+}
+.billing{
+	padding-bottom: 20px;
+}
+.left-bot{
+	width: 100%;
+    max-width: 698px;
+	padding: 42px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-text{
+	color: #5F86ED;
+}
+.left-text:hover{
+	text-decoration: underline;
+}
+.left-bot button{
+	width: 144px;
+	padding: 10px 0;
+	background-color: #5F86ED;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+}
+.left-bot button:hover{
+background-color: #3E5FBA;
+}
+.right-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.right-top .images{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #dedede;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+	margin-right: -110px;
+}
+.right-top .images:after{
+	content: '2';
+	position: absolute;
+	display: block;
+	background-color: #5F86ED;
+	top: -25px;
+	left: 23px;
+	font-size: 1.8em;
+	width: 50px;
+	color: #fff;
+	border-radius: 50%;
+	transform: scale(0.4);
+}
+.right-item{
+	display: flex;
+	justify-content: space-between;
+
+}
+.right-item.mor{
+	margin-bottom: 10px;
+}
+.choco-spice.bl{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 1166px) {
+	.left{
+		float: none;
+		margin: 0 auto;
+	}
+	.right{
+		width: 100%;
+		max-width: 698px;
+		float: none;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	.left-bot{
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 600px){
+	.left-card{
+		display: block;
+	}
+	label[for="cvc"]{
+		margin-left: 0;
+	}
+}
